@@ -1,0 +1,21 @@
+name: Test Prime Number Script
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python environment
+        uses: actions/setup-python@v3
+        with:
+          python-version: '3.x' # Replace '3.x' with your specific Python version
+      - name: Install dependencies
+        run: pip install pytest
+      - name: Run tests
+        run: pytest make_prime_pages.py
+
