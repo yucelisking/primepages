@@ -5,6 +5,10 @@ st.subheader("This is a subheader")
 
 st.image("https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg")
 
+st.markdown('''
+This website created by Yucel Isbaran to use both Python and CI/CD skills.
+            ''')
+
 def is_prime(num):
   """
   Check if the given number is prime.
