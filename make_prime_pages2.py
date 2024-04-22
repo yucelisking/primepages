@@ -1,3 +1,8 @@
+import streamlit as st
+
+st.header("This is a header", divider="rainbow")
+st.subheader("This is a subheader")
+
 def is_prime(num):
   """
   Check if the given number is prime.
