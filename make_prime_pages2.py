@@ -3,6 +3,8 @@ import streamlit as st
 st.header("This is a header", divider="rainbow")
 st.subheader("This is a subheader")
 
+st.image("https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg")
+
 def is_prime(num):
   """
   Check if the given number is prime.
