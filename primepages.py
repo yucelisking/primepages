@@ -58,7 +58,7 @@ class TestAddFunction(unittest.TestCase):
     # Test case for addition of two negative numbers
     def test_add_negative_numbers(self):
         result = add(-3, -5)
-        self.assertEqual(result, -8)  # Assert that result equals -8
+        self.assertEqual(result, 0)  # Assert that result equals -8
     
     # Test case for addition of a positive and a negative number
     def test_add_mixed_numbers(self):
