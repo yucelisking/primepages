@@ -1,1 +1,1 @@
-# make-prime-pages2
+primepages
