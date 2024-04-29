@@ -17,5 +17,5 @@ jobs:
       - name: Install dependencies
         run: pip install pytest
       - name: Run tests
-        run: pytest make_prime_pages2.py
+        run: pytest primepages.py
 
