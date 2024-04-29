@@ -1,13 +1,4 @@
-import streamlit as st
-
-st.header("This is a header", divider="rainbow")
-st.subheader("This is a subheader")
-
-st.image("https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg")
-
-st.markdown('''
-This website created by Yucel Isbaran to use both Python and CI/CD skills.
-            ''')
+import unittest
 
 def is_prime(num):
   """
@@ -52,6 +43,28 @@ def create_page(start, count, filename):
   with open(filename, "w") as file:
     file.write(prime_list)
 
+# The function we want to test
+def add(a, b):
+    return a + b
+
+# A class inheriting from unittest.TestCase
+class TestAddFunction(unittest.TestCase):
+    
+    # Test case for addition of two positive numbers
+    def test_add_positive_numbers(self):
+        result = add(3, 5)
+        self.assertEqual(result, 8)  # Assert that result equals 8
+    
+    # Test case for addition of two negative numbers
+    def test_add_negative_numbers(self):
+        result = add(-3, -5)
+        self.assertEqual(result, -8)  # Assert that result equals -8
+    
+    # Test case for addition of a positive and a negative number
+    def test_add_mixed_numbers(self):
+        result = add(3, -5)
+        self.assertEqual(result, -2)  # Assert that result equals -2
+    
 if __name__ == "__main__":
   create_page(1, 100, "primes1.md")
   create_page(101, 100, "primes101.md")
